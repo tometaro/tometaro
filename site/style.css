@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#container{
+	width:960px;
+	margin:0 auto;
+	color:#FFF;
+}
+body{
+	background-image: url(img/bg.jpg);
+	/*画像は常に天地左右の中央配置*/
+	background-position:center center;
+	/*画像の繰り返し表示しない*/
+	background-repeat:no-repeat;
+	/*コンテンツの高さが画像の高さより大きいとき、動かないように固定*/
+	background-attachment:fixed;
+	/*表示するコンテナの大きさに基づいて、背景画像を調整*/
+	background-size:cover;
+	/*背景画像が読み込まれる前に表示される背景のカラー*/
+	}
+#content{
+    font-size: 20px;
+}
+#content ul {
+	list-style: none;
+	text-align: center;
+}
+#content ul li {
+	display: inline-block;
+	padding: 0 20px 0 20px;
+}
+#content ul li a, #category ul li a {
+	text-decoration: none;
+	color: #FFF;
+	-webkit-transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+#content ul li a:hover{
+	text-shadow: 0 0 3px #FFF, 0 0 5px #FFF;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>movie</title>
+<style>
+body{
+	margin:0;
+	padding:0;
+}1
+video#bgvid{
+	position:fixed;
+	left:0;
+	bottom:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-100;
+	background:url(xxx.jpg) no-repeat;/*動画が表示されない場合の代替え*/
+	background-size:cover;
+	display:block;/*ie8以下*/	
+}
+</style>
+</head>
+
+<body>
+<video id="bgvid" autoplay loop muted>
+<source src="ADayWithoutRain.webm" type="video/webm">
+<source src="ending_last.mp4" type="video/mp4">
+</video>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="tometaro the creation of the world.トメタロのポートフォリオページです。">
+    <title>TOMETARO</title>
+    <link rel="apple-touch-icon" href="touch_icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  	<!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="Nivo-Lightbox-master/nivo-lightbox.css">
+    <link rel="stylesheet" href="Nivo-Lightbox-master/themes/default/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--jQuery-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!--jQuery animsition-->
+    <script src="js/jquery.animsition.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".animsition").animsition({
+
+                inClass: 'fade-in',
+                outClass: 'fade-out',
+                inDuration: 1500,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+                loading: true,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                unSupportCss: ['animation-duration',
+                              '-webkit-animation-duration',
+                              '-o-animation-duration'
+                            ],
+                //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser. 
+                //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+
+                overlay: false,
+
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body'
+            });
+        });
+    </script>
+
+    <!--lightbox-->
+    <script type="text/javascript" src="Nivo-Lightbox-master/nivo-lightbox.js"></script>
+    <script>
+      $(document).ready(function(){
+    $('#gallery a').nivoLightbox({
+      effect: 'fall',// 表示の効果、fadeScale/slideLeft/slideRight/slideUp/slideDown/fall
+      theme: 'default',// テーマの指定
+      keyboardNav: true,// キーボード操作の可否 (left/right/escape)
+      onInit: function(){},// ライトボックスを読み込んだ際のコールバック
+      beforeShowLightbox: function(){},// ライトボックスが表示される前のコールバック
+      afterShowLightbox: function(lightbox){},// ライトボックスが表示された前のコールバック
+      beforeHideLightbox: function(){},// ライトボックスが閉じる前のコールバック
+      afterHideLightbox: function(){},// ライトボックスが閉じた前のコールバック
+      onPrev: function(element){},// ライトボックスのギャラリーで前へを押した際のコールバック
+      onNext: function(element){},// ライトボックスのギャラリーで次へを押した際のコールバック
+      errorMessage: 'error'// 読み込み失敗時のエラーメッセージ
+    });
+});
+        </script>
+
+    </head>
+
+<body id="portfolio">
+<div id="container" class="animsition" data-animsition-in="fade-in-down" data-animsition-out="fade-out-right">
+      <header id="header"> <a href="index.html" class="animsition-link" data-animsition-out="fade-out-up">
+        <h1>TOMETARO</h1>
+        <p>the creation of the world</p>
+        </a> 
+      
+      <nav id="nav">
+    <ul>
+          <li><a href="index.html" class="animsition-link">HOME</a> </li>
+          <li><a href="about.html" class="animsition-link">ABOUT</a> </li>
+          <li><a href="portfolio.html" class="animsition-link">PORTFOLIO</a> </li>
+          <li id="fade"><a href="http://tometaro.com/blog/" class="animsition-link">BLOG</a> </li>
+          <li><a href="contact.html" class="animsition-link">CONTACT</a> </li>
+        </ul>
+  </nav>
+  </header>
+    <div id="content">
+    <nav id="category">
+          <ul>
+        <li class="filter" data-filter="all"><a href="#">ALL</a> </li>
+        <li class="filter" data-filter=".web"><a href="#">WEB</a> </li>
+        <li class="filter" data-filter=".movie"><a href="#">MOVIE</a> </li>
+        <li class="filter" data-filter=".graphic"><a href="#">GRAPHIC</a> </li>
+        <li class="filter" data-filter=".illustration"><a href="#">ILLUSTRATION</a> </li>
+      </ul>
+    </nav>
+    <section id="gallery">
+      <ul>
+        <li class="mix web">
+          <h3><a href="http://cosmosgasuki.com/" title="hana's homepage*" target="_blank">hana's homepage*</a></h3>
+          <p>web</p>
+          <p>cosmosgasuki.com</p>
+          <div class="trimming"><a href="http://cosmosgasuki.com/" title="hana's homepage*" target="_blank"><img src="img/portfolio/hana_s.jpg" alt="hana's homepage*"></a></div>
+          </a> 
+        </li>
+              
+        <li class="mix movie">
+          <h3><a href="https://youtu.be/CHnEI04Z1y8">hairshow</a></h3>
+          <p>movie</p>
+          <p>1920*1080px</p>
+          <div class="trimming"><a href="https://youtu.be/CHnEI04Z1y8"><img src="img/portfolio/hairshow_s.jpg" alt="hairshow"></a></div>
+        </li>
+              
+        <li class="mix movie">
+          <h3><a href="https://youtu.be/sNUklN-FiHA">encroachment</a></h3>
+          <p>movie</p>
+          <p>1920*1080px</p>
+          <div class="trimming"><a href="https://youtu.be/sNUklN-FiHA"><img src="img/portfolio/encroachment_s.jpg" alt="encroachment"></a></div>
+        </li>
+              
+        <li class="mix graphic">
+          <h3><a href="img/portfolio/asagi_01.jpg" title="asagi" data-lightbox-gallery="gallery1">asagi</a></h3>
+          <p>postcard</p>
+          <p>148*100mm</p>
+          <div class="trimming"><a href="img/portfolio/asagi_01.jpg" title="asagi" data-lightbox-gallery="gallery1"><img src="img/portfolio/asagi_s.jpg" alt="asagi"></a></div>
+          <a href="img/portfolio/asagi_02.jpg" data-lightbox-gallery="gallery1"></a>
+        </li>
+              
+        <li class="mix graphic">
+          <h3><a href="img/portfolio/unity.jpg" title="unity">unity</a></h3>
+          <p>poster</p>
+          <p>594*841mm</p>
+          <div class="trimming"><a href="img/portfolio/unity.jpg" title="unity"><img src="img/portfolio/unity_s.jpg" alt="unity"></a></div>
+        </li>
+              
+        <li class="mix graphic">
+          <h3><a href="img/portfolio/portfolio_cover.jpg" title="portfolio cover">portfolio cover</a></h3>
+          <p>cover</p>
+          <p>420*297mm</p>
+          <div class="trimming"><a href="img/portfolio/portfolio_cover.jpg" title="portfolio cover"><img src="img/portfolio/portfolio_cover_s.jpg" alt="portfolio"></a></div>
+        </li>
+              
+        <li class="mix graphic illustration">
+          <h3><a href="img/portfolio/chess.jpg" title="comfort">comfort</a></h3>
+          <p>poster</p>
+          <p>594*841mm</p>
+          <div class="trimming"><a href="img/portfolio/chess.jpg" title="comfort"><img src="img/portfolio/chess_s.jpg" alt="comfort"></a></div>
+        </li>
+        
+        <li class="mix graphic illustration">
+          <h3><a href="img/portfolio/sticker.png" title="sticker">kuroshiba sticker</a></h3>
+          <p>sticker</p>
+          <p>210*297mm</p>
+          <div class="trimming"><a href="img/portfolio/sticker.png" title="sticker"><img src="img/portfolio/sticker_s.jpg" alt="sticker"></a></div>
+        </li>
+        
+        <li class="mix web">
+          <h3><a href="http://tometaro.com/blog" title="blog">blog</a></h3>
+          <p>web</p>
+          <p>tometaro.com/blog/</p>
+          <div class="trimming"><a href="http://tometaro.com/blog" title="blog"><img src="img/portfolio/blog_s.jpg" alt="blog"></a></div>
+        </li>
+        
+        <li class="mix web">
+          <h3><a href="index.html" title="tometaro">tometaro</a></h3>
+          <p>web</p>
+          <p>tometaro.com</p>
+          <div class="trimming"><a href="index.html" title="tometaro"><img src="img/portfolio/tometaro_s.jpg" alt="tometaro"></a></div>
+        </li>
+
+        <li class="mix movie">
+          <h3><a href="https://youtu.be/AaAJfIG05S4">hairshow02</a></h3>
+          <p>movie</p>
+          <p>1920*1080px</p>
+          <div class="trimming"><a href="https://youtu.be/AaAJfIG05S4"><img src="img/portfolio/hairshow02_s.png" alt="hairshow02"></a></div>
+        </li>
+        
+      </ul>
+    </section>
+  </div>
+    <footer id="footer">
+        <p id="name">トメタロ</p>
+        <p><small>Copyright &copy; 2014 tometaro. All rights reserved.</small> </p>
+    </footer>
+    </div>
+<div class="background"></div>
+<div class="background_fade"></div>
+      <ul id="scene" class="scene">
+    <li class="layer" data-depth="0.00"></li>
+    <!--<li class="layer" data-depth="0.10">
+            <div class="background"></div>
+        </li>-->
+    <li class="layer" data-depth="0.20">
+          <div class="noise01"></div>
+        </li>
+    <li class="layer" data-depth="0.30">
+          <div class="noise02"></div>
+        </li>
+    <li class="layer" data-depth="0.40">
+          <div class="noise03"></div>
+        </li>
+    <li class="layer" data-depth="0.50">
+          <h2 class="title">PORTFOLIO</h2>
+        </li>
+    <li class="layer" data-depth="0.60">
+          <div class="noise04"></div>
+        </li>
+    <li class="layer" data-depth="0.80">
+          <div class="noise05"></div>
+        </li>
+    <li class="layer" data-depth="0.90">
+          <div class="noise06"></div>
+        </li>
+    <li class="layer" data-depth="1.00">
+          <div class="noise07"></div>
+        </li>
+  </ul>
+  
+<!--parallax-->
+<script src="js/jquery.parallax.js"></script> 
+<script>
+        // Yep, that's it!
+        $('#scene').parallax();
+    </script> 
+<!--mixitup--> 
+<script src="js/jquery.mixitup.min.js"></script> 
+<script>
+        $(function () {
+            $('#gallery').mixItUp();
+        });
+    </script> 
+<!--fade out--> 
+<script>
+$(function() {
+  $('#nav li a,#header a').click(function() {
+    var url = $(this).attr("href");
+    $('.scene').animate({"opacity": 0}, 1000, function() {
+      location.href = url;
+    });
+    return false;
+  });
+});
+</script>
+
+<!--blog link--> 
+<script>
+$(function() {
+  $('#fade a').click(function() {
+    $('.background_fade').fadeIn(1000);
+      location.href = url;
+    });
+    return false;
+  });
+</script>
+
+<!--return--> 
+<script>
+$(window).unload(function(){});
+</script> 
+
+</body>
+</html>

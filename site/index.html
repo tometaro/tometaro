@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<!--htaccess-->
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://tometaro.com/site/sp/" >
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>KUROSHiBA</title>
+<link rel="stylesheet" href="shared/css/flexslider.css">
+<link rel="stylesheet" href="style.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="shared/js/jquery.flexslider.js"></script>
+<script src="shared/js/script.js"></script>
+<script>
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+  });
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+  <header>
+    <h1>KUROSHiBA</h1>
+    <p>japanese dogs</p>
+  </header>
+  <div class="flexslider">
+    <ul class="slides">
+     <li><img src="img/top01.jpg" alt="kuroshiba"></li>
+     <li><img src="img/top01.jpg" alt="kuroshiba"></li>
+     <li><img src="img/top01.jpg" alt="kuroshiba"></li>
+     <li><img src="img/top02.jpg" alt="kuroshiba"></li>
+    </ul>
+</div><!--/.flexslider-->
+  <div id="content">
+    <ul>
+      <li><a href="#kuroshiba">KUROSHiBA</a></li>
+      <li><a href="#shiba">SHiBA</a></li>
+      <li><a href="#akita">AKiTA</a></li>
+      <li><a href="#kai">KAi</a></li>
+      <li><a href="#kishu">KiSHU</a></li>
+      <li><a href="#shikoku">SHiKOKU</a></li>
+      <li><a href="#hokkaido">HOKKAiDO</a> </li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
