@@ -16,7 +16,7 @@ body {
 }
 #container {
     position: relative;
-    width: 960px;
+    width: 1000px;
     margin: 0 auto;
     z-index: 1000;
     height: auto !important;
@@ -179,7 +179,7 @@ img {
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: gray; /*IE 6-9*/ 
+    filter: gray; /*IE 6-9*/
     -webkit-transition: 1s ease-in-out;
     -moz-transition: 1s ease-in-out;
     -o-transition: 1s ease-in-out;
