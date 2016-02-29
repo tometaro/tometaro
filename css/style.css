@@ -17,6 +17,7 @@ body {
 #container {
     position: relative;
     width: 1000px;
+    
     margin: 0 auto;
     z-index: 1000;
     height: auto !important;
