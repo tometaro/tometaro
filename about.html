@@ -7,7 +7,7 @@
 <title>TOMETARO</title>
 <link rel="apple-touch-icon" href="touch_icon.png">
 <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all">
+<!-- <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all"> -->
 <link rel="stylesheet" href="css/style.css">
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
@@ -18,14 +18,14 @@
 <script src="js/jquery.animsition.min.js"></script>
 <script>
 $(document).ready(function() {
-  
+
   $(".animsition").animsition({
-  
+
     inClass               :   'fade-in',
     outClass              :   'fade-out',
     inDuration            :    1500,
     outDuration           :    800,
-    linkElement           :   '.animsition-link', 
+    linkElement           :   '.animsition-link',
     // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
     loading               :    true,
     loadingParentElement  :   'body', //animsition wrapper element
@@ -34,34 +34,70 @@ $(document).ready(function() {
                               '-webkit-animation-duration',
                               '-o-animation-duration'
                             ],
-    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser. 
+    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
     //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    
+
     overlay               :   false,
-    
+
     overlayClass          :   'animsition-overlay-slide',
     overlayParentElement  :   'body'
   });
-}); 
+});
+</script>
+<script>
+  (function($) {
+    $(function() {
+      var $header = $('#top-header');
+
+      // Nav Fixed
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          $header.addClass('fixed');
+        } else {
+          $header.removeClass('fixed');
+        }
+      });
+
+      // Nav Toggle Button
+      $('#nav-toggle').click(function(){
+        $header.toggleClass('open');
+      });
+
+    });
+  })(jQuery);
 </script>
 </head>
 
 <body id="about">
 <div id="container" class="animsition" data-animsition-in="fade-in-right" data-animsition-out="fade-out-right">
-  <header id="header"><a href="index.html" class="animsition-link" data-animsition-out="fade-out-up">
-    <h1>TOMETARO</h1>
-    <p>the creation of the world</p>
-    </a> 
+  <header id="top-header">
+    <div class="inner">
+      <div id="mobile-head">
+        <div id="logo">
+          <a href="index.html" class="animsition-link" data-animsition-out="fade-out-up">
+            <p id="tometaro-logo"><img src="tometaro_logo.svg" alt="トメタロ" height="20" ></p>
+            <h1>TOMETARO</h1>
+          </a>
+        </div>
+        <div id="nav-toggle">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <nav id="global-nav">
+        <ul>
+          <li><a href="index.html" class="animsition-link">HOME</a></li>
+          <li><a href="about.html" class="animsition-link">ABOUT</a></li>
+          <li><a href="portfolio.html" class="animsition-link">PORTFOLIO</a></li>
+          <li id="fade"><a href="http://tometaro.com/blog/" class="animsition-link">BLOG</a></li>
+          <li><a href="contact.html" class="animsition-link">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <nav id="nav">
-    <ul>
-      <li><a href="index.html" class="animsition-link">HOME</a> </li>
-      <li><a href="about.html" class="animsition-link">ABOUT</a> </li>
-      <li><a href="portfolio.html" class="animsition-link">PORTFOLIO</a> </li>
-      <li id="fade"><a href="http://tometaro.com/blog/" class="animsition-link">BLOG</a> </li>
-      <li><a href="contact.html" class="animsition-link">CONTACT</a> </li>
-    </ul>
-  </nav>
   <section id="content">
     <h2>トメタロ</h2>
     <p id="tometaro">TOMETARO</p>
@@ -114,13 +150,13 @@ $(document).ready(function() {
     </li>
   </ul>
 
-<!--parallax--> 
-<script src="js/jquery.parallax.js"></script> 
+<!--parallax-->
+<script src="js/jquery.parallax.js"></script>
 <script>
         // Yep, that's it!
         $('#scene').parallax();
-    </script> 
-<!--fade out--> 
+    </script>
+<!--fade out-->
 <script>
 $(function() {
   // ページ遷移時にフェードアウトさせるclickイベントの要素を指定。ここではli a
@@ -133,8 +169,8 @@ $(function() {
     return false;
   });
 });
-</script> 
-<!--blog link--> 
+</script>
+<!--blog link-->
 <script>
 $(function() {
   $('#fade a').click(function() {
@@ -144,9 +180,9 @@ $(function() {
     return false;
   });
 </script>
-<!--return--> 
+<!--return-->
 <script>
 $(window).unload(function(){});
-</script> 
+</script>
 </body>
 </html>

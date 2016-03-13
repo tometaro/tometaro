@@ -7,7 +7,7 @@
 <title>TOMETARO</title>
 <link rel="apple-touch-icon" href="touch_icon.png">
 <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-<link rel="stylesheet" href="/css/normalize.css" type="text/css" media="all">
+<!-- <link rel="stylesheet" href="/css/normalize.css" type="text/css" media="all"> -->
 <link rel="stylesheet" href="css/style.css">
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
@@ -44,111 +44,143 @@ $(document).ready(function() {
   });
 });
 </script>
+<script>
+  (function($) {
+    $(function() {
+      var $header = $('#top-header');
+
+      // Nav Fixed
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          $header.addClass('fixed');
+        } else {
+          $header.removeClass('fixed');
+        }
+      });
+
+      // Nav Toggle Button
+      $('#nav-toggle').click(function(){
+        $header.toggleClass('open');
+      });
+
+    });
+  })(jQuery);
+</script>
 </head>
 
 <body id="home">
   <div id="container" class="animsition" data-animsition-in="fade-in" data-animsition-out="fade-out-down">
-    <header id="header">
-      <div id="logo">
-        <a href="index.html" class="animsition-link" data-animsition-out="fade-out-up">
-          <h1>TOMETARO</h1>
-          <p>the creation of the world</p>
-        </a>
-      </div>
-      <nav id="nav">
-        <ul>
-          <li><a href="index.html" class="animsition-link">HOME</a> </li>
-          <li><a href="about.html" class="animsition-link">ABOUT</a> </li>
-          <li><a href="portfolio.html" class="animsition-link">PORTFOLIO</a> </li>
-          <li id="fade"><a href="http://tometaro.com/blog/" class="animsition-link">BLOG</a></li>
-          <li><a href="contact.html" class="animsition-link">CONTACT</a> </li>
-        </ul>
-      </nav>
+    <header id="top-header">
+    	<div class="inner">
+    		<div id="mobile-head">
+    			<div id="logo">
+    				<a href="index.html" class="animsition-link" data-animsition-out="fade-out-up">
+    					<p id="tometaro-logo"><img src="tometaro_logo.svg" alt="トメタロ" height="20" ></p>
+    					<h1>TOMETARO</h1>
+    				</a>
+    			</div>
+    			<div id="nav-toggle">
+    				<div>
+    					<span></span>
+    					<span></span>
+    					<span></span>
+    				</div>
+    			</div>
+    		</div>
+    		<nav id="global-nav">
+    			<ul>
+    				<li><a href="index.html" class="animsition-link">HOME</a></li>
+    				<li><a href="about.html" class="animsition-link">ABOUT</a></li>
+    				<li><a href="portfolio.html" class="animsition-link">PORTFOLIO</a></li>
+    				<li id="fade"><a href="http://tometaro.com/blog/" class="animsition-link">BLOG</a></li>
+    				<li><a href="contact.html" class="animsition-link">CONTACT</a></li>
+    			</ul>
+    		</nav>
+    	</div>
     </header>
-
-  <div id="content"></div>
+    <div id="content"></div>
     <footer id="footer">
       <p id="name">トメタロ</p>
       <p><small>Copyright &copy; 2014 tometaro. All rights reserved.</small></p>
     </footer>
   </div><!--container-->
 
-<div class="background"></div>
-<div class="background_fade"></div>
-<ul id="scene" class="scene">
-  <li class="layer" data-depth="0.00"></li>
-  <!--<li class="layer" data-depth="0.10">
-    <div class="background"></div>
-  </li>-->
-  <li class="layer" data-depth="0.20">
-    <div class="noise01"></div>
-  </li>
-  <li class="layer" data-depth="0.30">
-    <div class="noise02"></div>
-  </li>
-  <li class="layer" data-depth="0.40">
-    <div class="noise03"></div>
-  </li>
-  <li class="layer" data-depth="0.50">
-    <h2 class="title01">TOMETARO</h2>
-  </li>
-  <li class="layer" data-depth="0.50">
-    <h2 class="title02">トメタロ</h2>
-  </li>
-  <li class="layer" data-depth="0.60">
-    <div class="noise04"></div>
-  </li>
-  <li class="layer" data-depth="0.80">
-    <div class="noise05"></div>
-  </li>
-  <li class="layer" data-depth="0.90">
-    <div class="noise06"></div>
-  </li>
-  <li class="layer" data-depth="1.00">
-    <div class="noise07"></div>
-  </li>
-</ul>
-<!--parallax-->
-<script src="js/jquery.parallax.js"></script>
-<script>
-        $('#scene').parallax();
-    </script>
-<!--fade out-->
-<script>
-$(function() {
-  $('li a, a.windowFade ,#header a').click(function() {
-    var url = $(this).attr("href");
-    $('.scene').animate({"opacity": 0}, 1000, function() {
-      location.href = url;
+  <div class="background"></div>
+  <div class="background_fade"></div>
+  <ul id="scene" class="scene">
+    <li class="layer" data-depth="0.00"></li>
+    <!--<li class="layer" data-depth="0.10">
+      <div class="background"></div>
+    </li>-->
+    <li class="layer" data-depth="0.20">
+      <div class="noise01"></div>
+    </li>
+    <li class="layer" data-depth="0.30">
+      <div class="noise02"></div>
+    </li>
+    <li class="layer" data-depth="0.40">
+      <div class="noise03"></div>
+    </li>
+    <li class="layer" data-depth="0.50">
+      <h2 class="title01">TOMETARO</h2>
+    </li>
+    <li class="layer" data-depth="0.50">
+      <h2 class="title02">トメタロ</h2>
+    </li>
+    <li class="layer" data-depth="0.60">
+      <div class="noise04"></div>
+    </li>
+    <li class="layer" data-depth="0.80">
+      <div class="noise05"></div>
+    </li>
+    <li class="layer" data-depth="0.90">
+      <div class="noise06"></div>
+    </li>
+    <li class="layer" data-depth="1.00">
+      <div class="noise07"></div>
+    </li>
+  </ul>
+  <!--parallax-->
+  <script src="js/jquery.parallax.js"></script>
+  <script>
+          $('#scene').parallax();
+      </script>
+  <!--fade out-->
+  <script>
+  $(function() {
+    $('li a, a.windowFade ,#header a').click(function() {
+      var url = $(this).attr("href");
+      $('.scene').animate({"opacity": 0}, 1000, function() {
+        location.href = url;
+      });
+      return false;
     });
-    return false;
   });
-});
-</script>
-<!--blog link-->
-<script>
-$(function() {
-  $('#fade a').click(function() {
-    $('.background_fade').fadeIn(1000);
-      location.href = url;
+  </script>
+  <!--blog link-->
+  <script>
+  $(function() {
+    $('#fade a').click(function() {
+      $('.background_fade').fadeIn(1000);
+        location.href = url;
+      });
+      return false;
     });
-    return false;
-  });
-</script>
-<!--return-->
-<script>
-$(window).unload(function(){});
-</script>
-<!--Google Analytics-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  </script>
+  <!--return-->
+  <script>
+  $(window).unload(function(){});
+  </script>
+  <!--Google Analytics-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-57567544-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-57567544-1', 'auto');
+    ga('send', 'pageview');
 
-</script>
+  </script>
 </body>
 </html>

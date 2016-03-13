@@ -49,7 +49,7 @@ footer a {
 
 
 /* header */
-#top-head {
+#top-header {
 	font-size: 14px;
 	position: fixed;
 	width: 100%;
@@ -71,8 +71,8 @@ footer a {
 	position: relative;
 }
 
-#top-head a,
-#top-head {
+#top-header a,
+#top-header {
 	color: #fff;
 	text-decoration: none;
 }
@@ -114,7 +114,7 @@ h1 {
 
 
 /* Fixed */
-#top-head.fixed {
+#top-header.fixed {
 	margin-top: 0;
 	top: 0;
 	padding-top: 10px;
@@ -127,8 +127,8 @@ h1 {
 
 /* Transition */
 /*
-#top-head,
-#top-head .logo,
+#top-header,
+#top-header .logo,
 #global-nav ul li,
 #global-nav ul li a {
 	transition: all 0.3s ease;
@@ -144,7 +144,7 @@ h1 {
 	display: none;
 	position: absolute;
 	right: 20px;
-	top: 14px;
+	top: 20px;
 	width: 20px;
 	height: 36px;
 	cursor: pointer;
@@ -189,7 +189,7 @@ h1 {
 	#global-nav ul li a {
 		padding: 0 20px;
 	}
-	#top-head.fixed #global-nav ul li a {
+	#top-header.fixed #global-nav ul li a {
 		padding: 0 15px;
 	}
 }
@@ -200,18 +200,18 @@ h1 {
 	}
 
 
-	#top-head,
+	#top-header,
 	.inner {
 		width: 100%;
 		padding: 0;
 	}
-	#top-head {
+	#top-header {
 		top: 0;
 		position: fixed;
 		margin-top: 0;
 	}
 	/* Fixed reset */
-	#top-head.fixed {
+	#top-header.fixed {
 		padding-top: 0;
 		background: transparent;
 	}
@@ -228,14 +228,6 @@ h1 {
 		z-index: 999;
 		position: relative;
 	}
-	/*#top-head.fixed .logo,
-	#top-head .logo {
-		position: absolute;
-		left: 13px;
-		top: 13px;
-		font-size: 26px;
-		margin-left:10px;
-	}*/
 
 	#global-nav {
 		position: absolute;
@@ -260,10 +252,13 @@ h1 {
 		background:         linear-gradient(top, rgba(249,194,177,1),rgba(240,240,240,0));
 		width: 100%;
 		text-align: center;
-		padding: 50px 0;
+		padding: 100px 0;
 		-webkit-transition: .5s ease-in-out;
 		-moz-transition: .5s ease-in-out;
 		transition: .5s ease-in-out;
+	}
+	#logo{
+		padding:20px 0 0 20px;
 	}
 	#global-nav ul {
 		list-style: none;
@@ -275,12 +270,15 @@ h1 {
 	#global-nav ul li {
 		float: none;
 		position: static;
+		margin: 0 20px;
+		text-align: left;
+		border-bottom: 1px solid #FFF;
 	}
 	#global-nav ul li:after  {
 		display: none;
 	}
-	#top-head #global-nav ul li a,
-	#top-head.fixed #global-nav ul li a {
+	#top-header #global-nav ul li a,
+	#top-header.fixed #global-nav ul li a {
 		width: 100%;
 		display: block;
 		color: #fff;
