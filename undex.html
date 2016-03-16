@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>サンプル</title>
+	<link rel="stylesheet" href="cssjs/index.css">
+  <style>h1 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	margin: 0 0 30px 0;
+	background-color: #FA8072;
+}
+
+p {
+	font-size: 12px;
+}
+
+a {
+	color: #285294;
+}
+</style>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+	<script>
+  $(function(){
+	$("div")
+		.velocity(
+			{ width: '300px'},
+			{ duration: 100 }
+		)
+		.velocity(
+			{ height: '300px'},
+			{ duration: 100 }
+		)
+});</script>
+</head>
+<body>
+<h1>■$.Velocity.mockを指定しない場合（再生時間:0.2秒）</h1>
+<div></div>
+<p><a href="index2.html">→ $.Velocity.mockを指定する場合</a></p>
+</body>
+</html>
