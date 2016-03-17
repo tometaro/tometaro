@@ -882,8 +882,9 @@ img:hover {
 
     #global-nav {
       position: absolute;
-			top:-1000px;
-      opacity: 0;
+			/*top:-1000px;
+      opacity: 0;*/
+			display: none;
       animation: ZindexDownFadeOut .5s forwards cubic-bezier(.6,0,.3,1);
       animation-duration: 0.5s;
       animation-timing-function: cubic-bezier(0.6, 0, 0.3, 1);
@@ -959,8 +960,8 @@ img:hover {
     .open #global-nav {
 
       /* #global-nav top + #mobile-head height */
-			top:0;
-      opacity: 1.0;
+			/*top:0;
+      opacity: 1.0;*/
     /*		-moz-transform: translateY(500px);
       -webkit-transform: translateY(500px);
       transform: translateY(500px);*/
