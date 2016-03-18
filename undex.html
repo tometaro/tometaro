@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="tometaro the creation of the world.トメタロと連絡を取るページです。">
+  <title>TOMETARO</title>
+  <link rel="apple-touch-icon" href="touch_icon.png">
+  <link rel="shortcut icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
+  <!-- <link rel="stylesheet" href="/css/normalize.css" type="text/css" media="all"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animsition.min.css">
+  <!--webfont-->
+  <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+  <!--jQuery-->
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.js"></script>  <!--jQuery animsition-->
+  <script src="js/jquery.animsition.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $(".animsition").animsition({
+
+        inClass: 'fade-in',
+        outClass: 'fade-out',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        unSupportCss: ['animation-duration',
+          '-webkit-animation-duration',
+          '-o-animation-duration'
+        ],
+        //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+
+        overlay: false,
+
+        overlayClass: 'animsition-overlay-slide',
+        overlayParentElement: 'body'
+      });
+    });
+  </script>
+  <script>
+    (function($) {
+      $(function() {
+        var $header = $('#top-header');
+
+        // Nav Fixed
+        $(window).scroll(function() {
+          if ($(window).scrollTop() > 300) {
+            $header.addClass('fixed');
+          } else {
+            $header.removeClass('fixed');
+          }
+        });
+      });
+    })(jQuery);
+  </script>
+  <script>
+  // Nav Toggle Button
+  $(function() {
+  $('#global-nav').css("opacity","0");
+
+  $('#nav-toggle').on("click", function() {
+    $('#top-header').toggleClass('open');
+    $('#global-nav').velocity({ opacity: 1 }, { display: "block" });
+  });
+    // $('.open #nav-toggle').off("click", function() {
+    //   $('#global-nav').velocity({ opacity: 0 });
+  });
+  });
+
+  </script>
+</head>
+
+<body id="contact">
+  <div id="container" class="animsition" data-animsition-in="fade-in-right" data-animsition-out="fade-out-right">
+    <header id="top-header">
+      <div class="inner">
+        <div id="mobile-head">
+          <div id="logo">
+            <a href="index.html" class="animsition-link" data-animsition-out="fade-out-up">
+              <p id="tometaro-logo"><img src="tometaro_logo.svg" alt="トメタロ" height="20"></p>
+              <h1>TOMETARO</h1>
+            </a>
+          </div>
+          <div id="nav-toggle">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <nav id="global-nav">
+          <ul>
+            <li><a href="index.html" class="animsition-link">HOME</a></li>
+            <li><a href="about.html" class="animsition-link">ABOUT</a></li>
+            <li><a href="portfolio.html" class="animsition-link">PORTFOLIO</a></li>
+            <li id="fade"><a href="http://tometaro.com/blog/" class="animsition-link">BLOG</a></li>
+            <li><a href="contact.html" class="animsition-link">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="content">
+      <h3>mail</h3>
+      <p><img class="images" src="img/mail.png" alt="mail" width="250"></p>
+    </section>
+    <footer id="footer">
+      <p id="name">トメタロ</p>
+      <p><small>Copyright &copy; 2014 tometaro. All rights reserved.</small> </p>
+    </footer>
+  </div>
+  <div class="background"></div>
+  <div class="background_fade"></div>
+  <ul id="scene" class="scene">
+    <li class="layer" data-depth="0.00"></li>
+    <!--<li class="layer" data-depth="0.10">
+    <div class="background"></div>
+  </li>-->
+    <li class="layer" data-depth="0.20">
+      <div class="noise01"></div>
+    </li>
+    <li class="layer" data-depth="0.30">
+      <div class="noise02"></div>
+    </li>
+    <li class="layer" data-depth="0.40">
+      <div class="noise03"></div>
+    </li>
+    <li class="layer" data-depth="0.50">
+      <h2 class="title">CONTACT</h2>
+    </li>
+    <li class="layer" data-depth="0.60">
+      <div class="noise04"></div>
+    </li>
+    <li class="layer" data-depth="0.80">
+      <div class="noise05"></div>
+    </li>
+    <li class="layer" data-depth="0.90">
+      <div class="noise06"></div>
+    </li>
+    <li class="layer" data-depth="1.00">
+      <div class="noise07"></div>
+    </li>
+  </ul>
+
+</body>
+
+</html>

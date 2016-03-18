@@ -884,16 +884,6 @@ img:hover {
       position: absolute;
 			/*top:-1000px;
       opacity: 0;*/
-			display: none;
-      animation: ZindexDownFadeOut .5s forwards cubic-bezier(.6,0,.3,1);
-      animation-duration: 0.5s;
-      animation-timing-function: cubic-bezier(0.6, 0, 0.3, 1);
-      animation-delay: 0s;
-      animation-direction: normal;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-      animation-play-state: running;
-      animation-name: ZindexDownFadeOut;
 
       background: -webkit-linear-gradient(top, rgba(249,194,177,1),rgba(240,240,240,0));
       background:    -moz-linear-gradient(top, rgba(249,194,177,1),rgba(240,240,240,0));
@@ -965,7 +955,7 @@ img:hover {
     /*		-moz-transform: translateY(500px);
       -webkit-transform: translateY(500px);
       transform: translateY(500px);*/
-      transition-duration: 1.0s ease-out;
+      /*transition-duration: 1.0s ease-out;*/
 
     }
 
