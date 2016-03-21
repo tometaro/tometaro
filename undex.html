@@ -14,11 +14,12 @@
   <!--webfont-->
   <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
   <!--jQuery-->
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.js"></script>  <!--jQuery animsition-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js"></script>
+  <!--jQuery animsition-->
   <script src="js/jquery.animsition.min.js"></script>
   <script>
-    $(document).ready(function() {
+    $(function() {
 
       $(".animsition").animsition({
 
@@ -45,37 +46,7 @@
       });
     });
   </script>
-  <script>
-    (function($) {
-      $(function() {
-        var $header = $('#top-header');
 
-        // Nav Fixed
-        $(window).scroll(function() {
-          if ($(window).scrollTop() > 300) {
-            $header.addClass('fixed');
-          } else {
-            $header.removeClass('fixed');
-          }
-        });
-      });
-    })(jQuery);
-  </script>
-  <script>
-  // Nav Toggle Button
-  $(function() {
-  $('#global-nav').css("opacity","0");
-
-  $('#nav-toggle').on("click", function() {
-    $('#top-header').toggleClass('open');
-    $('#global-nav').velocity({ opacity: 1 }, { display: "block" });
-  });
-    // $('.open #nav-toggle').off("click", function() {
-    //   $('#global-nav').velocity({ opacity: 0 });
-  });
-  });
-
-  </script>
 </head>
 
 <body id="contact">
@@ -150,7 +121,7 @@
       <div class="noise07"></div>
     </li>
   </ul>
-
+  <script src="js/common.js"></script>
 </body>
 
 </html>

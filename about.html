@@ -1,81 +1,59 @@
 <!DOCTYPE HTML>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="tometaro the creation of the world.トメタロの自己紹介です。">
-<title>TOMETARO</title>
-<link rel="apple-touch-icon" href="touch_icon.png">
-<link rel="shortcut icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
-<!-- <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all"> -->
-<link rel="stylesheet" href="css/style.css">
-<!--webfont-->
-<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
-<!--jQuery-->
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<!--jQuery animsition-->
-<link rel="stylesheet" href="css/animsition.min.css">
-<script src="js/jquery.animsition.min.js"></script>
-<script>
-$(document).ready(function() {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="tometaro the creation of the world.トメタロの自己紹介です。">
+  <title>TOMETARO</title>
+  <link rel="apple-touch-icon" href="touch_icon.png">
+  <link rel="shortcut icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
+  <!-- <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <!--webfont-->
+  <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+  <!--jQuery-->
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!--jQuery animsition-->
+  <link rel="stylesheet" href="css/animsition.min.css">
+  <script src="js/jquery.animsition.min.js"></script>
+  <script>
+    $(document).ready(function() {
 
-  $(".animsition").animsition({
+      $(".animsition").animsition({
 
-    inClass               :   'fade-in',
-    outClass              :   'fade-out',
-    inDuration            :    1500,
-    outDuration           :    800,
-    linkElement           :   '.animsition-link',
-    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
-    loading               :    true,
-    loadingParentElement  :   'body', //animsition wrapper element
-    loadingClass          :   'animsition-loading',
-    unSupportCss          : [ 'animation-duration',
-                              '-webkit-animation-duration',
-                              '-o-animation-duration'
-                            ],
-    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        inClass: 'fade-in',
+        outClass: 'fade-out',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        unSupportCss: ['animation-duration',
+          '-webkit-animation-duration',
+          '-o-animation-duration'
+        ],
+        //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
 
-    overlay               :   false,
+        overlay: false,
 
-    overlayClass          :   'animsition-overlay-slide',
-    overlayParentElement  :   'body'
-  });
-});
-</script>
-<script>
-  (function($) {
-    $(function() {
-      var $header = $('#top-header');
-
-      // Nav Fixed
-      $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
-          $header.addClass('fixed');
-        } else {
-          $header.removeClass('fixed');
-        }
+        overlayClass: 'animsition-overlay-slide',
+        overlayParentElement: 'body'
       });
-
-      // Nav Toggle Button
-      $('#nav-toggle').click(function(){
-        $header.toggleClass('open');
-      });
-
     });
-  })(jQuery);
-</script>
+  </script>
 </head>
 
 <body id="about">
-<div id="container" class="animsition" data-animsition-in="fade-in-right" data-animsition-out="fade-out-right">
   <header id="top-header">
     <div class="inner">
       <div id="mobile-head">
         <div id="logo">
           <a href="index.html" class="animsition-link" data-animsition-out="fade-out-up">
-            <p id="tometaro-logo"><img src="tometaro_logo.svg" alt="トメタロ" height="20" ></p>
+            <p id="tometaro-logo"><img src="tometaro_logo.svg" alt="トメタロ" height="20"></p>
             <h1>TOMETARO</h1>
           </a>
         </div>
@@ -98,27 +76,29 @@ $(document).ready(function() {
       </nav>
     </div>
   </header>
-  <section id="content">
-    <h2>トメタロ</h2>
-    <p id="tometaro">TOMETARO</p>
-    <dl>
-      <dt>出身</dt>
-      <dd>兵庫県神戸市</dd>
-      <dt>学歴</dt>
-      <dd>神戸芸術工科大学ビジュアルデザイン学科卒業</dd>
-      <dt>作品</dt>
-      <dd>グラフィックデザイン、ウェブデザイン、映像、イラスト</dd>
-      <dt>趣味</dt>
-      <dd>映画鑑賞、写真、バイクツーリング、愛犬</dd>
-    </dl>
-  </section>
-  <footer id="footer">
+  <div id="container" class="animsition" data-animsition-in="fade-in-right" data-animsition-out="fade-out-right">
+
+    <section id="content">
+      <h2>トメタロ</h2>
+      <!-- <p id="tometaro">TOMETARO</p> -->
+      <dl>
+        <dt>出身</dt>
+        <dd>兵庫県神戸市</dd>
+        <dt>学歴</dt>
+        <dd>神戸芸術工科大学ビジュアルデザイン学科</dd>
+        <dt>作品</dt>
+        <dd>ウェブデザイン・映像・グラフィックデザイン・イラストレーション</dd>
+        <dt>趣味</dt>
+        <dd>映画鑑賞・写真・愛犬</dd>
+      </dl>
+    </section>
+    <footer id="footer">
       <p id="name">トメタロ</p>
       <p><small>Copyright &copy; 2014 tometaro. All rights reserved.</small> </p>
-  </footer>
-</div>
-<div class="background"></div>
-<div class="background_fade"></div>
+    </footer>
+  </div>
+  <div class="background"></div>
+  <div class="background_fade"></div>
   <ul id="scene" class="scene">
     <li class="layer" data-depth="0.00"></li>
     <!--<li class="layer" data-depth="0.10">
@@ -150,39 +130,44 @@ $(document).ready(function() {
     </li>
   </ul>
 
-<!--parallax-->
-<script src="js/jquery.parallax.js"></script>
-<script>
-        // Yep, that's it!
-        $('#scene').parallax();
-    </script>
-<!--fade out-->
-<script>
-$(function() {
-  // ページ遷移時にフェードアウトさせるclickイベントの要素を指定。ここではli a
-  $('li a, a.windowFade ,#header a').click(function() {
-    var url = $(this).attr("href");
-    // アニメーションで透過0になるまでフェードアウトさせる。速度ミリ秒
-    $('.scene').animate({"opacity": 0}, 1000, function() {
-      location.href = url;
+  <!--parallax-->
+  <script src="js/jquery.parallax.js"></script>
+  <script>
+    // Yep, that's it!
+    $('#scene').parallax();
+  </script>
+  <!--fade out-->
+  <script>
+    $(function() {
+      // ページ遷移時にフェードアウトさせるclickイベントの要素を指定。ここではli a
+      $('li a, a.windowFade ,#header a').click(function() {
+        var url = $(this).attr("href");
+        // アニメーションで透過0になるまでフェードアウトさせる。速度ミリ秒
+        $('.scene').animate({
+          "opacity": 0
+        }, 1000, function() {
+          location.href = url;
+        });
+        return false;
+      });
     });
-    return false;
-  });
-});
-</script>
-<!--blog link-->
-<script>
-$(function() {
-  $('#fade a').click(function() {
-    $('.background_fade').fadeIn(1000);
-      location.href = url;
+  </script>
+  <!--blog link-->
+  <script>
+    $(function() {
+      $('#fade a').click(function() {
+        $('.background_fade').fadeIn(1000);
+        location.href = url;
+      });
+      return false;
     });
-    return false;
-  });
-</script>
-<!--return-->
-<script>
-$(window).unload(function(){});
-</script>
+  </script>
+  <!--return-->
+  <script>
+    $(window).unload(function() {});
+  </script>
+  <script src="js/common.js"></script>
+
 </body>
+
 </html>

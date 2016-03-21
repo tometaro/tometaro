@@ -66,61 +66,39 @@
     });
   });
 </script>
-<script>
-  (function($) {
-    $(function() {
-      var $header = $('#top-header');
-
-      // Nav Fixed
-      $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
-          $header.addClass('fixed');
-        } else {
-          $header.removeClass('fixed');
-        }
-      });
-
-      // Nav Toggle Button
-      $('#nav-toggle').click(function(){
-        $header.toggleClass('open');
-      });
-
-    });
-  })(jQuery);
-</script>
-
 </head>
 
 <body id="portfolio">
-  <div id="container" class="animsition" data-animsition-in="fade-in-down" data-animsition-out="fade-out-right">
-    <header id="top-header">
-      <div class="inner">
-        <div id="mobile-head">
-          <div id="logo">
-            <a href="index.html" class="animsition-link" data-animsition-out="fade-out-up">
-              <p id="tometaro-logo"><img src="tometaro_logo.svg" alt="トメタロ" height="20" ></p>
-              <h1>TOMETARO</h1>
-            </a>
-          </div>
-          <div id="nav-toggle">
-            <div>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+  <header id="top-header">
+    <div class="inner">
+      <div id="mobile-head">
+        <div id="logo">
+          <a href="index.html" class="animsition-link" data-animsition-out="fade-out-up">
+            <p id="tometaro-logo"><img src="tometaro_logo.svg" alt="トメタロ" height="20" ></p>
+            <h1>TOMETARO</h1>
+          </a>
+        </div>
+        <div id="nav-toggle">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-        <nav id="global-nav">
-          <ul>
-            <li><a href="index.html" class="animsition-link">HOME</a></li>
-            <li><a href="about.html" class="animsition-link">ABOUT</a></li>
-            <li><a href="portfolio.html" class="animsition-link">PORTFOLIO</a></li>
-            <li id="fade"><a href="http://tometaro.com/blog/" class="animsition-link">BLOG</a></li>
-            <li><a href="contact.html" class="animsition-link">CONTACT</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
+      <nav id="global-nav">
+        <ul>
+          <li><a href="index.html" class="animsition-link">HOME</a></li>
+          <li><a href="about.html" class="animsition-link">ABOUT</a></li>
+          <li><a href="portfolio.html" class="animsition-link">PORTFOLIO</a></li>
+          <li id="fade"><a href="http://tometaro.com/blog/" class="animsition-link">BLOG</a></li>
+          <li><a href="contact.html" class="animsition-link">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="container" class="animsition" data-animsition-in="fade-in-down" data-animsition-out="fade-out-right">
+
     <div id="content">
       <nav id="category">
         <ul>
@@ -134,7 +112,7 @@
       <section id="gallery">
         <ul>
           <li class="mix web">
-            <h3><a href="http://cosmosgasuki.com/" title="hana's homepage*" target="_blank">hana's homepage*</a></h3>
+            <h2><a href="http://cosmosgasuki.com/" title="hana's homepage*" target="_blank">hana's homepage*</a></h2>
             <p>web</p>
             <p>cosmosgasuki.com</p>
             <div class="trimming"><a href="http://cosmosgasuki.com/" title="hana's homepage*" target="_blank"><img src="img/portfolio/portfolio-image-hana's.png" alt="hana's homepage*"></a></div>
@@ -142,21 +120,21 @@
           </li>
 
           <li class="mix movie">
-            <h3><a href="https://youtu.be/CHnEI04Z1y8">hairshow</a></h3>
+            <h2><a href="https://youtu.be/CHnEI04Z1y8">hairshow</a></h2>
             <p>movie</p>
             <p>1920*1080px</p>
             <div class="trimming"><a href="https://youtu.be/CHnEI04Z1y8"><img src="img/portfolio/portfolio-image-hairshow2014.png" alt="hairshow"></a></div>
           </li>
 
           <li class="mix movie">
-            <h3><a href="https://youtu.be/sNUklN-FiHA">encroachment</a></h3>
+            <h2><a href="https://youtu.be/sNUklN-FiHA">encroachment</a></h2>
             <p>movie</p>
             <p>1920*1080px</p>
             <div class="trimming"><a href="https://youtu.be/sNUklN-FiHA"><img src="img/portfolio/portfolio-image-encroachment.png" alt="encroachment"></a></div>
           </li>
 
           <li class="mix graphic">
-            <h3><a href="img/portfolio/asagi_01.jpg" title="asagi" data-lightbox-gallery="gallery1">asagi</a></h3>
+            <h2><a href="img/portfolio/asagi_01.jpg" title="asagi" data-lightbox-gallery="gallery1">asagi</a></h2>
             <p>postcard</p>
             <p>148*100mm</p>
             <div class="trimming"><a href="img/portfolio/asagi_01.jpg" title="asagi" data-lightbox-gallery="gallery1"><img src="img/portfolio/portfolio-image-asagi.png" alt="asagi"></a></div>
@@ -164,49 +142,49 @@
           </li>
 
           <li class="mix graphic">
-            <h3><a href="img/portfolio/unity.jpg" title="unity">unity</a></h3>
+            <h2><a href="img/portfolio/unity.jpg" title="unity">unity</a></h2>
             <p>poster</p>
             <p>594*841mm</p>
-            <div class="trimming"><a href="img/portfolio/unity.jpg" title="unity"><img src="img/portfolio/unity_s.jpg" alt="unity"></a></div>
+            <div class="trimming"><a href="img/portfolio/unity.jpg" title="unity"><img src="img/portfolio/portfolio-image-unity.png" alt="unity"></a></div>
           </li>
 
           <li class="mix graphic">
-            <h3><a href="img/portfolio/portfolio_cover.jpg" title="portfolio cover">portfolio cover</a></h3>
+            <h2><a href="img/portfolio/portfolio_cover.jpg" title="portfolio cover">portfolio cover</a></h2>
             <p>cover</p>
             <p>420*297mm</p>
             <div class="trimming"><a href="img/portfolio/portfolio_cover.jpg" title="portfolio cover"><img src="img/portfolio/portfolio-image-cover.png" alt="portfolio"></a></div>
           </li>
 
           <li class="mix graphic illustration">
-            <h3><a href="img/portfolio/chess.jpg" title="comfort">comfort</a></h3>
+            <h2><a href="img/portfolio/chess.jpg" title="comfort">comfort</a></h2>
             <p>poster</p>
             <p>594*841mm</p>
             <div class="trimming"><a href="img/portfolio/chess.jpg" title="comfort"><img src="img/portfolio/portfolio-image-chess.png" alt="comfort"></a></div>
           </li>
 
           <li class="mix graphic illustration">
-            <h3><a href="img/portfolio/sticker.png" title="sticker">kuroshiba sticker</a></h3>
+            <h2><a href="img/portfolio/sticker.png" title="sticker">kuroshiba sticker</a></h2>
             <p>sticker</p>
             <p>210*297mm</p>
             <div class="trimming"><a href="img/portfolio/sticker.png" title="sticker"><img src="img/portfolio/portfolio-image-sticker.png" alt="sticker"></a></div>
           </li>
 
           <li class="mix web">
-            <h3><a href="http://tometaro.com/blog" title="blog">blog</a></h3>
+            <h2><a href="http://tometaro.com/blog" title="blog">blog</a></h2>
             <p>web</p>
             <p>tometaro.com/blog/</p>
             <div class="trimming"><a href="http://tometaro.com/blog" title="blog"><img src="img/portfolio/portfolio-image-blog.png" alt="blog"></a></div>
           </li>
 
           <li class="mix web">
-            <h3><a href="index.html" title="tometaro">tometaro</a></h3>
+            <h2><a href="index.html" title="tometaro">tometaro</a></h2>
             <p>web</p>
             <p>tometaro.com</p>
             <div class="trimming"><a href="index.html" title="tometaro"><img src="img/portfolio/portfolio-image-tometaro.png" alt="tometaro"></a></div>
           </li>
 
           <li class="mix movie">
-            <h3><a href="https://youtu.be/RBnyg0XJTgY">hairshow02</a></h3>
+            <h2><a href="https://youtu.be/RBnyg0XJTgY">hairshow02</a></h2>
             <p>movie</p>
             <p>1920*1080px</p>
             <div class="trimming"><a href="https://youtu.be/RBnyg0XJTgY"><img src="img/portfolio/portfolio-image-hairshow2015.png" alt="hairshow02"></a></div>
@@ -290,6 +268,6 @@
   <script>
   $(window).unload(function(){});
   </script>
-
+  <script src="js/common.js"></script>
 </body>
 </html>
