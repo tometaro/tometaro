@@ -1,5 +1,160 @@
 <!DOCTYPE HTML>
 <html lang="ja">
+<<<<<<< HEAD
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="tometaro the creation of the world.トメタロのウェブサイトです。">
+<title>TOMETARO</title>
+<link rel="apple-touch-icon" href="touch_icon.png">
+<link rel="shortcut icon" type="image/svg+xml" sizes="any" href="favicon.svg" />
+<!-- <link rel="stylesheet" href="/css/normalize.css" type="text/css" media="all"> -->
+<link rel="stylesheet" href="css/style.css">
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+<!--jQuery-->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.js"></script>
+
+<script src="js/velocity.min.js"></script>
+<!--jQuery animsition-->
+<!-- <link rel="stylesheet" href="css/animsition.min.css">
+<script src="js/jquery.animsition.min.js"></script> -->
+<!-- <script>
+$(document).ready(function() {
+
+  $(".animsition").animsition({
+
+    inClass               :   'fade-in',
+    outClass              :   'fade-out',
+    inDuration            :    2000,
+    outDuration           :    800,
+    linkElement           :   '.animsition-link',
+    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+    loading               :    true,
+    loadingParentElement  :   'body', //animsition wrapper element
+    loadingClass          :   'animsition-loading',
+    unSupportCss          : [ 'animation-duration',
+                              '-webkit-animation-duration',
+                              '-o-animation-duration'
+                            ],
+    //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+
+    overlay               :   false,
+
+    overlayClass          :   'animsition-overlay-slide',
+    overlayParentElement  :   'body'
+  });
+});
+</script> -->
+<script>
+  (function($) {
+    $(function() {
+      var $header = $('#top-header');
+
+      // Nav Fixed
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          $header.addClass('fixed');
+        } else {
+          $header.removeClass('fixed');
+        }
+      });
+
+      // Nav Toggle Button
+      $('#nav-toggle').click(function(){
+        $header.toggleClass('open');
+      });
+
+    });
+  })(jQuery);
+</script>
+<!-- <script type="text/javascript">
+$(function(){
+  $('#nav-toggle').click(function(){
+ $('#top-header').toggleClass('open');
+     });
+  });
+</script> -->
+<script>
+
+
+$(function(){
+  $(".open #global-nav").class("display":"none","opacity","0");
+	$('#nav-toggle').on('click', function(){
+		$('.open #global-nav').velocity({
+			marginLeft: 200,
+			borderColor: '#000'
+		},{
+			duration: 1000,
+			easing: 'easeInOutQuad'
+      display: 'block'
+		});
+	});
+});
+
+
+</script>
+<!-- <script>
+$(function(){
+    $("#nav-toggle").on("click", function() {
+        $(".open #global-nav").fadeIn();
+    });
+});
+</script> -->
+<!-- <script type="text/javascript">
+$(function(){
+  $('#nav-toggle').click(function() {
+     $('#top-header').toggleClass('open');
+   }).do(
+    function(){
+      $(".open #global-nav").stop().animate( { opacity: 'toggle',}, { duration: 500, easing: 'swing', } );
+	} );
+} );
+</script> -->
+
+
+</head>
+
+<body id="home">
+  <div id="container" class="animsition" data-animsition-in="fade-in" data-animsition-out="fade-out-down">
+    <header id="top-header">
+    	<div class="inner">
+    		<div id="mobile-head">
+    			<div id="logo">
+    				<a href="index.html" class="animsition-link" data-animsition-out="fade-out-up">
+    					<p id="tometaro-logo"><img src="tometaro_logo.svg" alt="トメタロ" height="20" ></p>
+    					<h1>TOMETARO</h1>
+    				</a>
+    			</div>
+    			<div id="nav-toggle">
+    				<div>
+    					<span></span>
+    					<span></span>
+    					<span></span>
+    				</div>
+    			</div>
+    		</div>
+    		<nav id="global-nav">
+    			<ul>
+    				<li><a href="index.html" class="animsition-link">HOME</a></li>
+    				<li><a href="about.html" class="animsition-link">ABOUT</a></li>
+    				<li><a href="portfolio.html" class="animsition-link">PORTFOLIO</a></li>
+    				<li id="fade"><a href="http://tometaro.com/blog/" class="animsition-link">BLOG</a></li>
+    				<li><a href="contact.html" class="animsition-link">CONTACT</a></li>
+    			</ul>
+    		</nav>
+    	</div>
+    </header>
+    <div id="content"></div>
+    <footer id="footer">
+      <p id="name">トメタロ</p>
+      <p><small>Copyright &copy; 2014 tometaro. All rights reserved.</small></p>
+    </footer>
+  </div><!--container-->
+
+=======
 
 <head>
   <meta charset="UTF-8">
@@ -89,13 +244,19 @@
       <p><small>Copyright &copy; 2014 tometaro. All rights reserved.</small> </p>
     </footer>
   </div>
+>>>>>>> 2c8e4bb917148bb8b361b5977c7d2619c7d25ce6
   <div class="background"></div>
   <div class="background_fade"></div>
   <ul id="scene" class="scene">
     <li class="layer" data-depth="0.00"></li>
     <!--<li class="layer" data-depth="0.10">
+<<<<<<< HEAD
+      <div class="background"></div>
+    </li>-->
+=======
     <div class="background"></div>
   </li>-->
+>>>>>>> 2c8e4bb917148bb8b361b5977c7d2619c7d25ce6
     <li class="layer" data-depth="0.20">
       <div class="noise01"></div>
     </li>
@@ -106,7 +267,14 @@
       <div class="noise03"></div>
     </li>
     <li class="layer" data-depth="0.50">
+<<<<<<< HEAD
+      <h2 class="title01">TOMETARO</h2>
+    </li>
+    <li class="layer" data-depth="0.50">
+      <h2 class="title02">トメタロ</h2>
+=======
       <h2 class="title">CONTACT</h2>
+>>>>>>> 2c8e4bb917148bb8b361b5977c7d2619c7d25ce6
     </li>
     <li class="layer" data-depth="0.60">
       <div class="noise04"></div>
@@ -123,5 +291,8 @@
   </ul>
   <script src="js/common.js"></script>
 </body>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 2c8e4bb917148bb8b361b5977c7d2619c7d25ce6
 </html>
