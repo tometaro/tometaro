@@ -143,14 +143,14 @@ h2 {
   transition: .35s ease-in-out;
 }
 #nav-toggle span:nth-child(1) {
-  top: 0;
+  top: 4px;
 }
 #nav-toggle span:nth-child(2) {
-  top: 8px;
+  top: 12px;
 }
-#nav-toggle span:nth-child(3) {
+/*#nav-toggle span:nth-child(3) {
   top: 16px;
-}
+}*/
 
 #content {
   margin: 0;
@@ -626,7 +626,7 @@ filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
     opacity: 0;
   }
   25% {
-    opacity: 1;
+    opacity: 0.7;
   }
   50% {
     opacity: 0;
@@ -643,7 +643,7 @@ filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
     opacity: 0;
   }
   25% {
-    opacity: 1;
+    opacity: 0.7;
   }
   50% {
     opacity: 0;
@@ -878,17 +878,17 @@ filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
   }
   /* #nav-toggle 切り替えアニメーション */
   .open #nav-toggle span:nth-child(1) {
-    top: 11px;
+    top: 8px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  .open #nav-toggle span:nth-child(2) {
+  /*.open #nav-toggle span:nth-child(2) {
     width: 0;
     left: 50%;
-  }
-  .open #nav-toggle span:nth-child(3) {
-    top: 11px;
+  }*/
+  .open #nav-toggle span:nth-child(2) {
+    top: 8px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
