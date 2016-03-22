@@ -183,7 +183,7 @@ h2 {
 }
 #about dt {
   float: left;
-  font-size: 16px;
+  font-size: 14px;
 
 }
 #about dd {
@@ -748,11 +748,9 @@ filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
     display: list-item;
     padding: 0;
   }
-  #content p {
-    font-size: 11px;
-  }
+
   #content h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
   #content p {
     font-size: 11px;
@@ -772,7 +770,7 @@ filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
     width: 100%;
   }
   .images {
-    width: 250px;
+    height:  18px;
   }
   /*about*/
 
@@ -782,13 +780,13 @@ filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
   }
   #about dt {
     float: none;
-    font-size: 16px;
+    font-size: 18px;
 
   }
   #about dd {
     margin-left: 0;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
 
