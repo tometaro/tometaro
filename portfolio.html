@@ -11,11 +11,9 @@
 <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
 <!-- <link rel="stylesheet" href="/css/normalize.css" type="text/css" media="all"> -->
 <link rel="stylesheet" href="css/animsition.min.css">
-<link rel="stylesheet" href="css/magnific-popup.css">
-<!-- <link rel="stylesheet" href="Nivo-Lightbox-master/nivo-lightbox.css">
-<link rel="stylesheet" href="Nivo-Lightbox-master/themes/default/default.css"> -->
+<link rel="stylesheet" href="Nivo-Lightbox-master/nivo-lightbox.css">
+<link rel="stylesheet" href="Nivo-Lightbox-master/themes/default/default.css">
 <link rel="stylesheet" href="css/style.css">
-
 
 <!--jQuery-->
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -48,48 +46,9 @@
     });
   });
 </script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript">
-     $(function() {
-       $('.popup-video').magnificPopup({
-         disableOn: 700,
-         type: 'iframe',
-         mainClass: 'mfp-fade',
-         removalDelay: 160,
-         preloader: false,
 
-         fixedContentPos: false
-       });
-       $('.popup-image').magnificPopup({
-         disableOn: 700,
-         type: 'image',
-         mainClass: 'mfp-fade',
-         removalDelay: 160,
-         preloader: false,
-
-         fixedContentPos: false
-       });
-       $('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}
-		}
-	});
-     });
-   </script>
 <!--lightbox-->
-<!-- <script type="text/javascript" src="Nivo-Lightbox-master/nivo-lightbox.js"></script>
+<script type="text/javascript" src="Nivo-Lightbox-master/nivo-lightbox.js"></script>
 <script>
   $(document).ready(function(){
     $('#gallery a').nivoLightbox({
@@ -106,7 +65,7 @@
       errorMessage: 'error'// 読み込み失敗時のエラーメッセージ
     });
   });
-</script> -->
+</script>
 </head>
 
 <body id="portfolio">
@@ -160,53 +119,53 @@
           </li>
 
           <li class="mix movie">
-            <h2><a href="https://www.youtube.com/watch?v=CHnEI04Z1y8" class="popup-video" title="hairshow 2014">hairshow 2014</a></h2>
+            <h2><a href="https://youtu.be/CHnEI04Z1y8">hairshow</a></h2>
             <p>movie</p>
             <p>1920*1080px</p>
-            <div class="trimming"><a href="https://www.youtube.com/watch?v=CHnEI04Z1y8" class="popup-video" title="hairshow 2014"><img src="img/portfolio/portfolio-image-hairshow2014.png" alt="hairshow 2014"></a></div>
+            <div class="trimming"><a href="https://youtu.be/CHnEI04Z1y8"><img src="img/portfolio/portfolio-image-hairshow2014.png" alt="hairshow"></a></div>
           </li>
 
           <li class="mix movie">
-            <h2><a href="https://www.youtube.com/watch?v=sNUklN-FiHA" class="popup-video" title="encroachment">encroachment</a></h2>
+            <h2><a href="https://youtu.be/sNUklN-FiHA">encroachment</a></h2>
             <p>movie</p>
             <p>1920*1080px</p>
-            <div class="trimming"><a href="https://www.youtube.com/watch?v=sNUklN-FiHA" class="popup-video" title="encroachment"><img src="img/portfolio/portfolio-image-encroachment.png" alt="encroachment"></a></div>
+            <div class="trimming"><a href="https://youtu.be/sNUklN-FiHA"><img src="img/portfolio/portfolio-image-encroachment.png" alt="encroachment"></a></div>
           </li>
 
-          <li class="mix graphic popup-gallery">
-            <h2><a href="img/portfolio/asagi_01.jpg" title="asagi">asagi</a></h2>
+          <li class="mix graphic">
+            <h2><a href="img/portfolio/asagi_01.jpg" title="asagi" data-lightbox-gallery="gallery1">asagi</a></h2>
             <p>postcard</p>
             <p>148*100mm</p>
-            <div class="trimming"><a href="img/portfolio/asagi_01.jpg" title="asagi"><img src="img/portfolio/portfolio-image-asagi.png" alt="asagi"></a></div>
-            <a href="img/portfolio/asagi_02.jpg" ></a>
+            <div class="trimming"><a href="img/portfolio/asagi_01.jpg" title="asagi" data-lightbox-gallery="gallery1"><img src="img/portfolio/portfolio-image-asagi.png" alt="asagi"></a></div>
+            <a href="img/portfolio/asagi_02.jpg" data-lightbox-gallery="gallery1"></a>
           </li>
 
           <li class="mix graphic">
-            <h2><a href="img/portfolio/unity.jpg" class="popup-image" title="unity">unity</a></h2>
+            <h2><a href="img/portfolio/unity.jpg" title="unity">unity</a></h2>
             <p>poster</p>
             <p>594*841mm</p>
-            <div class="trimming"><a href="img/portfolio/unity.jpg" class="popup-image" title="unity"><img src="img/portfolio/portfolio-image-unity.png" alt="unity"></a></div>
+            <div class="trimming"><a href="img/portfolio/unity.jpg" title="unity"><img src="img/portfolio/portfolio-image-unity.png" alt="unity"></a></div>
           </li>
 
           <li class="mix graphic">
-            <h2><a href="img/portfolio/portfolio_cover.jpg" class="popup-image" title="portfolio cover">portfolio cover</a></h2>
+            <h2><a href="img/portfolio/portfolio_cover.jpg" title="portfolio cover">portfolio cover</a></h2>
             <p>cover</p>
             <p>420*297mm</p>
-            <div class="trimming"><a href="img/portfolio/portfolio_cover.jpg" class="popup-image" title="portfolio cover"><img src="img/portfolio/portfolio-image-cover.png" alt="portfolio"></a></div>
+            <div class="trimming"><a href="img/portfolio/portfolio_cover.jpg" title="portfolio cover"><img src="img/portfolio/portfolio-image-cover.png" alt="portfolio"></a></div>
           </li>
 
           <li class="mix graphic illustration">
-            <h2><a href="img/portfolio/chess.jpg" class="popup-image" title="comfort">comfort</a></h2>
+            <h2><a href="img/portfolio/chess.jpg" title="comfort">comfort</a></h2>
             <p>poster</p>
             <p>594*841mm</p>
-            <div class="trimming"><a href="img/portfolio/chess.jpg" class="popup-image" title="comfort"><img src="img/portfolio/portfolio-image-chess.png" alt="comfort"></a></div>
+            <div class="trimming"><a href="img/portfolio/chess.jpg" title="comfort"><img src="img/portfolio/portfolio-image-chess.png" alt="comfort"></a></div>
           </li>
 
           <li class="mix graphic illustration">
-            <h2><a href="img/portfolio/sticker.png" class="popup-image"　title="sticker">kuroshiba sticker</a></h2>
+            <h2><a href="img/portfolio/sticker.png" title="sticker">kuroshiba sticker</a></h2>
             <p>sticker</p>
             <p>210*297mm</p>
-            <div class="trimming"><a href="img/portfolio/sticker.png" class="popup-image" title="sticker"><img src="img/portfolio/portfolio-image-sticker.png"  alt="sticker"></a></div>
+            <div class="trimming"><a href="img/portfolio/sticker.png" title="sticker"><img src="img/portfolio/portfolio-image-sticker.png" alt="sticker"></a></div>
           </li>
 
           <li class="mix web">
@@ -224,10 +183,10 @@
           </li>
 
           <li class="mix movie">
-            <h2><a href="https://www.youtube.com/watch?v=RBnyg0XJTgY" class="popup-video" title="hairshow 2015 cover">hairshow 2015</a></h2>
+            <h2><a href="https://youtu.be/RBnyg0XJTgY">hairshow02</a></h2>
             <p>movie</p>
             <p>1920*1080px</p>
-            <div class="trimming"><a href="https://www.youtube.com/watch?v=RBnyg0XJTgY" class="popup-video" title="hairshow 2015"><img src="img/portfolio/portfolio-image-hairshow2015.png" alt="hairshow 2015"></a></div>
+            <div class="trimming"><a href="https://youtu.be/RBnyg0XJTgY"><img src="img/portfolio/portfolio-image-hairshow2015.png" alt="hairshow02"></a></div>
           </li>
         </ul>
       </section>
