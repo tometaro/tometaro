@@ -183,7 +183,7 @@ h2 {
 }
 #about dt {
   float: left;
-  font-size: 14px;
+  font-size: 16px;
 
 }
 #about dd {
@@ -748,9 +748,11 @@ filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
     display: list-item;
     padding: 0;
   }
-
+  #content p {
+    font-size: 11px;
+  }
   #content h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   #content p {
     font-size: 11px;
@@ -770,7 +772,7 @@ filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
     width: 100%;
   }
   .images {
-    height:  18px;
+    width: 250px;
   }
   /*about*/
 
@@ -780,13 +782,13 @@ filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
   }
   #about dt {
     float: none;
-    font-size: 18px;
+    font-size: 16px;
 
   }
   #about dd {
     margin-left: 0;
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
 
